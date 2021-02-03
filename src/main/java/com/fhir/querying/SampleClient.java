@@ -32,7 +32,7 @@ public class SampleClient {
 
 	public static void main(String[] theArgs) throws IOException, InterruptedException {
 		// Create a FHIR client
-		doBasicTask();
+//		doBasicTask();
 		doIntermediateTask();
 
 	}
@@ -103,8 +103,9 @@ public class SampleClient {
 	}
 
 	/**
-	 * This method searches calls SFHIR API and searches names mentioned in file.
-	 * send disableCache value as true if cache needs to be disabled
+	 * This method searches given file path content line by line by calling SFHIR
+	 * API and prints average response time. send disableCache value as true if
+	 * cache needs to be disabled
 	 * 
 	 * @param filePath
 	 * @param disableCache
